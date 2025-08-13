@@ -57,7 +57,7 @@ public class ScrabbleExtensionTest {
 
     @Test
     public void nestedLetterInsideWordMultipliers() {
-        Scrabble scrabble = new Scrabble("{[d]og}");
+        Scrabble scrabble = new Scrabble("{[d]og}"); // full word doubled first, then triple score for d
         Assertions.assertEquals(18, scrabble.score());
     }
 
